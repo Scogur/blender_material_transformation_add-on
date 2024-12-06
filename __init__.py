@@ -103,7 +103,6 @@ class MaterialTransformerOperator(bpy.types.Operator):
         if material:
             new_material = create_fresnel_like_material(material)
             context.object.active_material = new_material
-            # Optional: delete the original material
             # bpy.data.materials.remove(material)
         return {'FINISHED'}
 
